@@ -7,17 +7,16 @@ Stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre 
 <?php
 
 $paragraph = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, numquam ab at facere ratione quod corrupti minima necessitatibus quidem. Unde aperiam aliquid odit repellendus ducimus nisi numquam, culpa eligendi autem?";
+//var_dump($paragraph);
+//var_dump(strlen($paragraph));
 
-//Stampare in dump il paragrafo e la sua lunghezza
-/* var_dump($paragraph);
-var_dump(strlen($paragraph)); */
 //Stampa senza l'utilizzo dell'HTML
 echo $paragraph;
 echo strlen($paragraph);
 
 //parola passata dall'utente tramite parametro GET.
 $parolaRicerca = $_GET['parola'];
-var_dump($parolaRicerca);
+//var_dump($parolaRicerca);
 $sostituzionParola = str_replace($_GET['parola'], "***", $paragraph);
 
 //Stampa paragrafo nuovo con asterischi
